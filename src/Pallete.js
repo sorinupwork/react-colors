@@ -43,7 +43,6 @@ export default class Pallete extends Component {
           showingAllColors
         />
         <div className="Pallete-colors"> {colorBoxes} </div>
-        const {(colors, palleteName, emoji, id)} = this.props.pallete;
         <PaletteFooter palleteName={palleteName} emoji={emoji} />
       </div>
     );
