@@ -30,6 +30,7 @@ export default class Pallete extends Component {
         name={color.name}
         key={color.id}
         moreUrl={`/palette/${id}/${color.id}`}
+        showLink={true}
       />
     ));
     return (
