@@ -5,7 +5,6 @@ import { withStyles } from "@mui/styles";
 
 class PalleteList extends Component {
   goToPalette(id) {
-    console.log("HI");
     this.props.history.push(`/palette/${id}`);
   }
   render() {
