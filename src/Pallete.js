@@ -2,19 +2,8 @@ import React, { Component } from "react";
 import ColorBox from "./ColorBox";
 import PaletteFooter from "./PaletteFooter";
 import Navbar from "./Navbar";
+import styles from "./styles/PaletteStyles";
 import { withStyles } from "@mui/styles";
-import "./Pallete.css";
-
-const styles = {
-  Palette: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-  },
-  colors: {
-    height: "90%",
-  },
-};
 
 export default withStyles(styles)(
   class Pallete extends Component {
