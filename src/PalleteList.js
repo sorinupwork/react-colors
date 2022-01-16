@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import MiniPalette from "./MiniPalette";
 import styles from "./styles/PaletteListStyles";
 import { withStyles } from "@mui/styles";
-import { palette } from "@mui/system";
 
 class PalleteList extends Component {
   goToPalette(id) {
