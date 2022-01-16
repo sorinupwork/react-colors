@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import MiniPalette from "./MiniPalette";
 import styles from "./styles/PaletteListStyles";
 import { withStyles } from "@mui/styles";
+import { palette } from "@mui/system";
 
 class PalleteList extends Component {
   goToPalette(id) {
     this.props.history.push(`/palette/${id}`);
   }
   render() {
-    const { palletes, classes } = this.props;
+    const { palletes, classes, deletePalette } = this.props;
     return (
       <div className={classes.root}>
         <div className={classes.container}>
@@ -22,6 +23,9 @@ class PalleteList extends Component {
               <MiniPalette
                 {...pallete}
                 handleClick={() => this.goToPalette(pallete.id)}
+                handleDelete={deletePalette}
+                key={pallete.id}
+                id={pallete.id}
               />
             ))}
           </div>
