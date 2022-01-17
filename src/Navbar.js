@@ -29,7 +29,7 @@ export default withStyles(styles)(
       this.setState({ open: false });
     }
     render() {
-      const { format } = this.state;
+      const { format, open } = this.state;
       const { level, changeLevel, showingAllColors, classes } = this.props;
       return (
         <header className={classes.Navbar}>
@@ -59,7 +59,7 @@ export default withStyles(styles)(
           </div>
           <Snackbar
             anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-            open={this.state.open}
+            open={open}
             autoHideDuration={2500}
             message={
               <span id="message-id">

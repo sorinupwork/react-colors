@@ -38,7 +38,7 @@ export default withStyles(styles)(
               })}
             >
               <h1>copied!</h1>
-              <p className={classes.copyText}>{this.props.background}</p>
+              <p className={classes.copyText}>{background}</p>
             </div>
             <div>
               <div className={classes.boxContent}>
