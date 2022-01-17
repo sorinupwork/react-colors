@@ -46,8 +46,8 @@ export default {
         marginLeft: " -7px",
         marginTop: " -3px",
       },
-    [sizes.down("md")]: {
-      width: "160px",
+    [sizes.down("sm")]: {
+      width: "150px",
     },
   },
   selectContainer: {
